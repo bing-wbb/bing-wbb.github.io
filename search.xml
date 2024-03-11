@@ -1,373 +1,73 @@
-<!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next gemini use-motion" lang="zh-CN">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="htmlHTML的全称为超文本标记语言，是一种标记语言。它包括一系列标签，通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。  css选择器的优先级通配符选择器* &lt; 标签选择器 &lt; 类 &lt; id &lt; 内联样式 &lt; !impor">
-<meta property="og:type" content="article">
-<meta property="og:title" content="前端面试常用题">
-<meta property="og:url" content="http://example.com/2024/03/11/fileName/index.html">
-<meta property="og:site_name" content="哎亚亚的小墙">
-<meta property="og:description" content="htmlHTML的全称为超文本标记语言，是一种标记语言。它包括一系列标签，通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。  css选择器的优先级通配符选择器* &lt; 标签选择器 &lt; 类 &lt; id &lt; 内联样式 &lt; !impor">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-03-11T07:40:33.000Z">
-<meta property="article:modified_time" content="2024-03-11T09:33:51.208Z">
-<meta property="article:author" content="哎亚亚">
-<meta name="twitter:card" content="summary">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '',
-    scheme: 'Gemini',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://example.com/2024/03/11/fileName/"/>
-
-
-
-
-
-  <title>前端面试常用题 | 哎亚亚的小墙</title>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">哎亚亚的小墙</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Home
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            Categories
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            About
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archives
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            Tags
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            Sitemap
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            Commonweal 404
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/11/fileName/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="哎亚亚的小墙">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">前端面试常用题</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2024-03-11T15:40:33+08:00">
-                2024-03-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="html"><a href="#html" class="headerlink" title="html"></a>html</h1><p>HTML的全称为超文本标记语言，是一种<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/5964436">标记语言</a>。它包括一系列标签，通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8A%A8%E7%94%BB/206564">动画</a>、声音、表格、链接等。 </p>
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/11/23/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<span id="more"></span>。
+
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>categories</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>关于md代码书写---Typora</title>
+    <url>/2024/03/11/postName/</url>
+    <content><![CDATA[<h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><p>标题一共有六级,是用“#”实现的，标题前面加一个“#”，代表一级标题；依次类推，标题前面加六个“#”代表六级标题；一共有六级标题，编辑各种文档完全够用,左侧的目录会根据输入的标题自动生成响应的层级。</p>
+<span id="more"></span>。
+
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150147-82804.gif"></img></p>
+<h3 id="2-强调"><a href="#2-强调" class="headerlink" title="2.强调"></a>2.<strong>强调</strong></h3><p>在要<strong>强调</strong>内容前后分别加两个“*”号。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150148-9b57a.gif"></img></p>
+<h3 id="3-斜体"><a href="#3-斜体" class="headerlink" title="3.斜体"></a>3.<em>斜体</em></h3><p>前后分别加一个“*”号。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150148-20d37.gif"></img></p>
+<h3 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.<del>删除线</del></h3><p>内容前后分别加上<strong>两个</strong>“~”号。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150149-3aed3.gif"></img></p>
+<hr>
+<h2 id="list列表处理"><a href="#list列表处理" class="headerlink" title="list列表处理"></a>list列表处理</h2><h3 id="1-有序列表"><a href="#1-有序列表" class="headerlink" title="1.有序列表"></a>1.有序列表</h3><p>输入数字“1”+“.”+空格 ， 自动开始有序列表。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150150-27a92.gif"></img></p>
+<h3 id="2-无序列表"><a href="#2-无序列表" class="headerlink" title="2.无序列表"></a>2.无序列表</h3><p>输入“+”或“-”或“*”+空格，自动开始无序列表。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150150-de191.gif"></img></p>
+<h3 id="3-table表格"><a href="#3-table表格" class="headerlink" title="3.table表格"></a>3.table表格</h3><p>Ctrl+T,在弹出的对话框中选择行列数，自动生成列表。 还可以很方便地对表格进行编辑。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150151-beafb.gif"></img></p>
+<p>当然还有另外一种建立表格的方式用’|’分隔然后回车创建表格,使用ctrl+回车新添一行</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150152-8fe54.gif"></img></p>
+<h3 id="4-分割线"><a href="#4-分割线" class="headerlink" title="4.分割线"></a>4.分割线</h3><p>输入三个或三个以上“-”（“*”），再按回车键，即出现一条分割线。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150153-b207d.gif" alt="win上好用的Markdown编辑工具Typora教程"></p>
+<h3 id="5-插入"><a href="#5-插入" class="headerlink" title="5.插入"></a>5.插入</h3><p>插入本地图片：直接把图片拖入即可； 插入网络图片：<img src="/%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5" alt="图片标题">。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150153-3a19e.gif" alt="win上好用的Markdown编辑工具Typora教程"></p>
+<h3 id="6-链接"><a href="#6-链接" class="headerlink" title="6.链接"></a>6.链接</h3><p>[链接提示]+(链接地址)。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150155-b1d2d.gif" alt="win上好用的Markdown编辑工具Typora教程"></p>
+<h3 id="7-数学公式"><a href="#7-数学公式" class="headerlink" title="7.数学公式"></a>7.数学公式</h3><p>“$$”+回车。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150156-5068f.gif" alt="win上好用的Markdown编辑工具Typora教程"></p>
+<h3 id="8-代码"><a href="#8-代码" class="headerlink" title="8.代码"></a>8.代码</h3><p>行内代码：代码的两端各加一个“&#96;”号，（在Tab键上面，英文输入法）。 代码块：输入三个“~”，按回车键，即可选择编程语言。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150156-28824.gif" alt="win上好用的Markdown编辑工具Typora教程"></p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150157-a4ffa.gif" alt="win上好用的Markdown编辑工具Typora教程"></p>
+<hr>
+<h2 id="导出多种格式文件"><a href="#导出多种格式文件" class="headerlink" title="导出多种格式文件"></a>导出多种格式文件</h2><p>typora 的文件导入&#x2F;导出功能使用 Pandoc 把 Markdown 源码转换成不同的文件格式，所以我们如果想使用文件导入&#x2F;导出功能，必须先安装 Pandoc。</p>
+<p><img src="https://www.typora.net/wp-content/uploads/2019/10/20191024150158-4721a.gif" alt="win上好用的Markdown编辑工具Typora教程"></p>
+<hr>
+<hr>
+<p>转载于<a href="https://www.typora.net/527.html">Typora使用教程</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>前端面试常用题</title>
+    <url>/2024/03/11/fileName/</url>
+    <content><![CDATA[<h1 id="html"><a href="#html" class="headerlink" title="html"></a>html</h1><p>HTML的全称为超文本标记语言，是一种<a href="https://baike.baidu.com/item/%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/5964436">标记语言</a>。它包括一系列标签，通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、<a href="https://baike.baidu.com/item/%E5%8A%A8%E7%94%BB/206564">动画</a>、声音、表格、链接等。 </p>
 <h1 id="css"><a href="#css" class="headerlink" title="css"></a>css</h1><h2 id="选择器的优先级"><a href="#选择器的优先级" class="headerlink" title="选择器的优先级"></a>选择器的优先级</h2><p>通配符选择器* &lt; 标签选择器 &lt; 类 &lt; id &lt; 内联样式 &lt; !important</p>
 <span id="more"></span>。
 
@@ -462,7 +162,7 @@
 <p>export function clearCookie(key:string){</p>
 <p> document.cookie &#x3D; key+”&#x3D;0;expires&#x3D;” + new Date().toUTCString(); &#x2F;&#x2F;国际时间</p>
 <p>}</p>
-<h2 id="防抖和节流"><a href="#防抖和节流" class="headerlink" title="防抖和节流"></a>防抖和节流</h2><p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/baidu_39009276/article/details/123798695">https://blog.csdn.net/baidu_39009276/article/details/123798695</a></p>
+<h2 id="防抖和节流"><a href="#防抖和节流" class="headerlink" title="防抖和节流"></a>防抖和节流</h2><p>参考：<a href="https://blog.csdn.net/baidu_39009276/article/details/123798695">https://blog.csdn.net/baidu_39009276/article/details/123798695</a></p>
 <p>iiii&#x2F;clip_image008.jpg)</p>
 <h2 id="类和类继承"><a href="#类和类继承" class="headerlink" title="类和类继承"></a>类和类继承</h2><p>class 类是一种抽象的体现，用来表示具有相同特性的一类事物，是面向对象编程（oop）不可缺少的工具。</p>
 <ol>
@@ -548,7 +248,7 @@
 <p>闭包只使用一次，或使用后不再使用，闭包该被销毁的没有被销毁，就会造成内存泄漏</p>
 <p>如何解决内存泄漏：foo&#x3D;null; &#x2F;&#x2F;使函数指向空地址，GC垃圾就会回收</p>
 <h2 id="let-const区别"><a href="#let-const区别" class="headerlink" title="let const区别"></a>let const区别</h2><p><strong>1、相同点：</strong></p>
-<p>①　只在声明所在的块级<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E4%BD%9C%E7%94%A8%E5%9F%9F&spm=1001.2101.3001.7020">作用域</a>内有效。</p>
+<p>①　只在声明所在的块级<a href="https://so.csdn.net/so/search?q=%E4%BD%9C%E7%94%A8%E5%9F%9F&spm=1001.2101.3001.7020">作用域</a>内有效。</p>
 <p>②　不提升，同时存在暂时性死区，只能在声明的位置后面使用。</p>
 <p>③　不可重复声明。</p>
 <p><strong>2、不同点：</strong></p>
@@ -628,345 +328,6 @@
 <p>var arr1 &#x3D; [‘a’, ‘b’, ‘c’]; </p>
 <p>var newArr1 &#x3D; arr1.map(function (v, i, arr) { return v + (i + 1); }); </p>
 <p>console.log(newArr1);</p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2024/03/11/postName/" rel="next" title="关于md代码书写---Typora">
-                <i class="fa fa-chevron-left"></i> 关于md代码书写---Typora
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
-    
-  </div>
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="" />
-          <p class="site-author-name" itemprop="name"></p>
-           
-              <p class="site-description motion-element" itemprop="description"></p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives/">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">posts</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">categories</span>
-              </a>
-            </div>
-          
-
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#html"><span class="nav-number">1.</span> <span class="nav-text">html</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#css"><span class="nav-number">2.</span> <span class="nav-text">css</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%E4%BC%98%E5%85%88%E7%BA%A7"><span class="nav-number">2.1.</span> <span class="nav-text">选择器的优先级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%AD%E4%B9%89%E5%8C%96%E6%A0%87%E7%AD%BE"><span class="nav-number">2.2.</span> <span class="nav-text">语义化标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%92%E6%A8%A1%E5%9E%8B"><span class="nav-number">2.3.</span> <span class="nav-text">盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#margin%E7%A9%BF%E9%80%8F"><span class="nav-number">2.4.</span> <span class="nav-text">margin穿透</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E6%A0%BC%E5%B8%83%E5%B1%80"><span class="nav-number">2.5.</span> <span class="nav-text">网格布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%83%E7%B4%A0%E9%9A%90%E8%97%8F%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="nav-number">2.6.</span> <span class="nav-text">元素隐藏的方式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Js"><span class="nav-number">3.</span> <span class="nav-text">Js</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#cookie%E7%9A%84%E6%A0%BC%E5%BC%8F-%E8%8E%B7%E5%8F%96%E5%92%8C%E5%AD%98%E5%82%A8-%E6%B8%85%E9%99%A4"><span class="nav-number">3.1.</span> <span class="nav-text">cookie的格式 获取和存储 清除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81"><span class="nav-number">3.2.</span> <span class="nav-text">防抖和节流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B1%BB%E5%92%8C%E7%B1%BB%E7%BB%A7%E6%89%BF"><span class="nav-number">3.3.</span> <span class="nav-text">类和类继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E5%92%8C%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.4.</span> <span class="nav-text">函数和方法的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%93%BE%E5%BC%8F%E4%BD%9C%E7%94%A8%E5%9F%9F%EF%BC%88%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE%EF%BC%89"><span class="nav-number">3.5.</span> <span class="nav-text">链式作用域（作用域链）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Js%E7%9A%84%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86"><span class="nav-number">3.6.</span> <span class="nav-text">Js的内存管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Js%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6"><span class="nav-number">3.7.</span> <span class="nav-text">Js垃圾回收</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%B1%E6%8B%B7%E8%B4%9D%E3%80%81%E6%B5%85%E6%8B%B7%E8%B4%9D"><span class="nav-number">3.8.</span> <span class="nav-text">深拷贝、浅拷贝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AD%E5%8C%85"><span class="nav-number">3.9.</span> <span class="nav-text">闭包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#let-const%E5%8C%BA%E5%88%AB"><span class="nav-number">3.10.</span> <span class="nav-text">let const区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#js%E4%B8%AD%E5%85%B3%E4%BA%8Econst%E5%9C%A8for-in%E6%88%96%E8%80%85for-of%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">3.11.</span> <span class="nav-text">js中关于const在for in或者for of中的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#foreach%E5%92%8Cmap%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.12.</span> <span class="nav-text">foreach和map的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#break-continue-return%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.13.</span> <span class="nav-text">break continue return的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for%E2%80%A6in%E2%80%A6%E5%92%8Cfor%E2%80%A6of%E2%80%A6%E5%8C%BA%E5%88%AB"><span class="nav-number">3.14.</span> <span class="nav-text">for…in…和for…of…区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#js%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="nav-number">3.15.</span> <span class="nav-text">js高阶函数</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2024</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">哎亚亚</span>
-</div>
-
-
-<div class="powered-by">
-  Powered by <a class="theme-link" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
-</div>
-
-<div class="theme-info">
-  Theme -
-  <a class="theme-link" target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Gemini
-  </a>
-</div>
-
-
-        
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-</body>
-</html>
+]]></content>
+  </entry>
+</search>
