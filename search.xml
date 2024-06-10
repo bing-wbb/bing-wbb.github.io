@@ -335,8 +335,8 @@
     <url>/2024/06/10/interview/</url>
     <content><![CDATA[<h2 id="文字处理"><a href="#文字处理" class="headerlink" title="文字处理"></a>文字处理</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><p>标题一共有六级,是用“#”实现的，标题前面加一个“#”，代表一级标题；依次类推，标题前面加六个“#”代表六级标题；一共有六级标题，编辑各种文档完全够用,左侧的目录会根据输入的标题自动生成响应的层级。</p>
 ]]></content>
-      <tags>
-        <tag>面试</tag>
-      </tags>
+      <categories>
+        <category>面试</category>
+      </categories>
   </entry>
 </search>
