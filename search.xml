@@ -382,6 +382,8 @@
 <h3 id="1-可能性一：账号出错"><a href="#1-可能性一：账号出错" class="headerlink" title="1.可能性一：账号出错"></a>1.可能性一：账号出错</h3><p>在git命令中的username指的是用户的邮箱而非github自己取的名字</p>
 <p>密码是git登录密码，但是由于在2021&#x2F;8&#x2F;13开始取消了账号密码方式，所以密码可以输入个人访问令牌，令牌获取方式如下：</p>
 <p>首先点击settings，然后点击developer seetings，选择Tokens</p>
+<span id="more"></span>
+
 <p><img src="/2024/06/10/git/0fb1d6736de146569606fd7448644684.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
 <p><img src="/2024/06/10/git/93d62b9a84804bf8ae8d3ea9e72b967b.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
 <p><img src="/2024/06/10/git/0bf27dad6bf84cda878c177be8839119.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
