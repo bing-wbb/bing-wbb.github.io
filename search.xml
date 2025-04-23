@@ -401,6 +401,8 @@
 
 <p>本地创建：</p>
 <p>新建md，然后直接放到博客文件夹下的_posts文件夹中</p>
+<span id="more"></span>
+
 <h3 id="清除静态文件"><a href="#清除静态文件" class="headerlink" title="清除静态文件"></a>清除静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
 
 <h3 id="生成静态文章"><a href="#生成静态文章" class="headerlink" title="生成静态文章"></a>生成静态文章</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
